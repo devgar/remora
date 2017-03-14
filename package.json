@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/devgar/gitoct/issues"
   },
-  "homepage": "https://github.com/devgar/gitoct#readme"
+  "homepage": "https://github.com/devgar/gitoct#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
 }

@@ -1,2 +1,5 @@
+#!/usr/bin/env node
 
-console.log("Initial commit")
+const program = require('commander');
+
+console.log("Doing a test");
