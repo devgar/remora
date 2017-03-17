@@ -2,4 +2,4 @@
 
 const program = require('commander');
 
-console.log("Doing a test");
+program.parse(process.argv);
