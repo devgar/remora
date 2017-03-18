@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/devgar/gitoct#readme",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "github": "^9.2.0"
   }
 }
