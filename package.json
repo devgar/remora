@@ -1,7 +1,7 @@
 {
-  "name": "gitoct",
+  "name": "remora",
   "version": "0.0.0",
-  "description": "A simple manager for github an other services",
+  "description": "A simple remote manager for github an other services",
   "main": "index.js",
   "scripts": {
     "test": "node index.js test"
