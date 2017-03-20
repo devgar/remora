@@ -19,7 +19,7 @@ var argv = yargs
   .option("license",{alias: 'L',
     description: "Define license, ignored if not init"})
 }, args => {
-  console.log("Create repo\n", args);
+  require('./lib/github/create-repo')(args);
 })
 .command("fork", "Forks a repo from another user")
 .command("delete", "Deletes a repo")
