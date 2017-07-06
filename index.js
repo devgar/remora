@@ -1,8 +1,6 @@
 #!/usr/bin/env node
 
-const yargs = require('yargs');
-
-var argv = yargs
+require('yargs')
 .count('verbose')
 .alias('v', 'verbose')
 .option('organization', {alias: 'o'})
@@ -18,12 +16,11 @@ var argv = yargs
     description: "Define languaje for '.gitignore', ignored if not init"})
   .option("license",{alias: 'L',
     description: "Define license, ignored if not init"})
-}, args => {
-  require('./lib/github/create-repo')(args);
-})
+}, require('./lib/github/create-repo') )
+.command("clone", "Clones a remote repository from github")
 .command("fork", "Forks a repo from another user")
 .command("delete", "Deletes a repo")
-.command("edit", "Edits an existing repos")
+.command("edit", "Edits an existing repo")
 .demand(1, "must provide a valid command")
 .help("h")
 .alias("h", "help")
